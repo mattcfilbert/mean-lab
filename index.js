@@ -11,7 +11,7 @@ app.use('/node_modules', express.static('node_modules'))
 app.use(parser.json({ extended: true}))
 
 app.get('/characters', (req, res) => {
-  Character.find().then((characters) => {
+  Character.find({}, null, {sort: {name: 1}}).then((characters) => {
     res.json(characters)
   })
 })
