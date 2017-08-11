@@ -2,7 +2,7 @@ const axios = require('axios')
 const md5 = require('md5')
 
 const ts = Date.now()
-const marvelPUB = 'd0eb4827d960f0a1f1e295376f683498'
+const marvelPUB = process.env.MARVEL_PUB_KEY
 const marvelAPI = process.env.MARVEL_API_KEY
 const hash = md5(ts + marvelAPI + marvelPUB)
 

@@ -1,0 +1,8 @@
+<div class="hero-gallery">
+  <div ng-repeat="hero in vm.superheroes" class="hero-icon">
+    <a ui-sref="superheroesShow({id: hero._id})">
+      <h3>{{ hero.name }}</h3>
+      <img ng-src="{{ hero.image_url }}" alt="{{ hero.name }}">
+    </a>
+  </div>
+</div>

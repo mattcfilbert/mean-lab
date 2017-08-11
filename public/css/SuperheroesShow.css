@@ -1,0 +1,23 @@
+.superhero-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.superhero-detail {
+  height: 100vh;
+}
+
+.superhero-detail img {
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.superhero-info {
+  flex: 1 1 0;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}

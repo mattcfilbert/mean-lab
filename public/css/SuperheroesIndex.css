@@ -1,0 +1,38 @@
+body {
+  background: black;
+  color: white;
+  font: 20px Bangers, cursive;
+  letter-spacing: 0.2em;
+}
+
+.hero-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hero-icon {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.hero-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero-icon a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-icon img {
+  width: 100%;
+}
