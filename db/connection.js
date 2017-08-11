@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/meansuperheroes')
+mongoose.connect(process.env.MONGOLAB_CRIMSON_URI || 'mongodb://localhost/meansuperheroes')
 
 module.exports = mongoose
