@@ -1,3 +1,7 @@
+button {
+  background-color: #F0F0F0;
+}
+
 .superhero-detail {
   display: flex;
   flex-wrap: wrap;
@@ -15,9 +19,45 @@
 
 .superhero-info {
   flex: 1 1 0;
-  min-width: 200px;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.form-row input, textarea {
+  width: 30em;
+  margin-left: 5em;
+  color: white;
+  background: #2B2B2B;
+  border: none;
+}
+
+.form-row input:focus, textarea:focus {
+  outline: none;
+  background: #5A5A5A;
+}
+
+.form-row textarea {
+  height: 5em;
+}
+
+.hero-image-container {
+  overflow: hidden;
+  height: 100%;
+  flex: 0 0 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-container img {
+  height: 100%;
+  margin: auto;
 }
