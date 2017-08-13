@@ -1,7 +1,11 @@
 <div class="superhero-detail">
-  <img ng-src="{{ vm.superhero.image_url }}" alt="{{ vm.superhero.name}}">
   <div class="superhero-info">
-    <h1>{{ vm.superhero.name }}</h1>
-    <p>{{ vm.superhero.description }}</p>
+    <div ui-view>
+      <a ui-sref="superheroesIndex">&larr; Back</a>
+      <h1>{{ vm.superhero.name }}</h1>
+      <p>{{ vm.superhero.description }}</p>
+      <a ui-sref="superheroesEdit">Edit</a>
+    </div>
   </div>
+  <img ng-src="{{ vm.superhero.image_url }}" alt="{{ vm.superhero.name}}">
 </div>

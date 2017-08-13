@@ -26,6 +26,19 @@ function Router ($stateProvider, $urlRouterProvider, $locationProvider) {
       controllerAs: 'vm',
       templateUrl: '/assets/js/views/SuperheroesShow.html'
     })
+    .state('superheroesEdit', {
+      parent: 'superheroesShow',
+      url: '/edit',
+      controller: 'SuperheroesEdit',
+      controllerAs: 'vm',
+      templateUrl: '/assets/js/views/SuperheroesEdit.html'
+    })
+    .state('superheroesNew', {
+      url: '/heroes/new',
+      controller: 'SuperheroesNew',
+      controllerAs: 'vm',
+      templateUrl: '/assets/js/views/SuperheroesNew.html'
+    })
   $urlRouterProvider.otherwise('/heroes')
   $locationProvider.html5Mode(true)
 }

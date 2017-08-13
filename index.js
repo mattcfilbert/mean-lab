@@ -16,9 +16,27 @@ app.get('/characters', (req, res) => {
   })
 })
 
+app.post('/characters', (req, res) => {
+  Character.create(req.body).then((character) => {
+    res.status(200).json(character)
+  })
+})
+
 app.get('/characters/:id', (req, res) => {
   Character.findOne({ _id: req.params.id }).then((character) => {
     res.json(character)
+  })
+})
+
+app.put('/characters/:id', (req, res) => {
+  Character.findOneAndUpdate({ _id: req.params.id }, req.body, {new: true}).then((character) => {
+    res.status(200).json(character)
+  })
+})
+
+app.delete('/characters/:id', (req, res) => {
+  Character.findOneAndRemove({ _id: req.params.id }).then(() => {
+    res.status(200).send('character deleted')
   })
 })
 

@@ -1,0 +1,19 @@
+<h1>Edit Superhero</h1>
+<form>
+  <div class="form-row">
+    <label for="hero-name">Name</label>
+    <input type="text" id="hero-name" ng-model="vm.superhero.name" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <label for="hero-photo">Photo URL</label>
+    <input type="text" id="hero-photo" ng-model="vm.superhero.image_url" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <label for="hero-description">Description</label>
+    <textarea id="hero-description" ng-model="vm.superhero.description" spellcheck="false"></textarea>
+  </div>
+  <div class="form-row">    
+    <button type="submit" ng-click="vm.updateHero()">Save Changes</button>
+    <button type="submit" ng-click="vm.destroyHero()">Delete</button>
+  </div>
+</form>

@@ -6,5 +6,7 @@ angular
   ])
 
   function SuperheroFactory ($resource) {
-    return $resource('/characters/:id')
+    return $resource('/characters/:id', null, {
+      update: { method: 'PUT' }
+    })
   }

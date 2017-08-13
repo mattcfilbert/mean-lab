@@ -14,8 +14,16 @@
     <script src="/assets/js/services/SuperheroFactory.js"></script>
     <script src="/assets/js/controllers/SuperheroesIndex.js"></script>
     <script src="/assets/js/controllers/SuperheroesShow.js"></script>
+    <script src="/assets/js/controllers/SuperheroesEdit.js"></script>
+    <script src="/assets/js/controllers/SuperheroesNew.js"></script>
     <base href="/">
   </head>
-  <body ui-view>
+  <body>
+    <nav>
+      <a ui-sref="superheroesIndex">Home</a>
+      <a ui-sref="superheroesNew">Create Superhero</a>
+    </nav>
+    <main ui-view>
+    </main>
   </body>
 </html>
