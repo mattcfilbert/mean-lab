@@ -11,7 +11,7 @@ Character.remove({})
       heroes.forEach((hero, index, arr) => {
         Character.create({
           name: hero.name,
-          description: hero.description,
+          description: hero.description.replace(/\s/g, '') ? hero.description : "No description available...",
           image_url: hero.thumbnail.path + '/portrait_uncanny.' + hero.thumbnail.extension
         }, (err, char) => {
           console.log(err || char.name)
