@@ -4,6 +4,7 @@
   "description": "Sample MEAN app",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "seed": "node config/db/seed.js"
   },
   "repository": {
@@ -13,6 +14,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^4.11.9"
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.9",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
