@@ -1,0 +1,15 @@
+{
+  "name": "sample-mean-app",
+  "version": "1.0.0",
+  "description": "Sample MEAN app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/ga-wdi-exercises/sample-mean-app.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
