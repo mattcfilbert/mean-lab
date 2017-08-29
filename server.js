@@ -16,6 +16,7 @@ module.exports = app
 
 // Config app and routes
 require('./config/express')(app)
+require('./config/routes')(app)
 
 connect()
   .then(db => {
