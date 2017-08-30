@@ -1,0 +1,7 @@
+<div class="cookies-index">
+  <div class="cookie-index" ng-repeat="cookie in vm.Cookies">
+    <h3>{{cookie.flavor}}</h3>
+    <p>{{cookie.quantity}}</p>
+    <img ng-src="{{cookie.img_url}}" alt="{{cookie.flavor}}">
+  </div>
+</div>
