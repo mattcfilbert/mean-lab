@@ -6,7 +6,6 @@ angular.module('cookieMonster')
 
 function CookieFactory ($resource) {
   return $resource('/api/cookies/:id', null, {
-    update: {method: 'PUT'},
-    query: {method: 'GET', isArray:true}
+    update: {method: 'PUT'}
   })
 }

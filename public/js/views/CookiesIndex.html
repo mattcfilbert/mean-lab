@@ -1,8 +1,11 @@
 <h2>Index Page</h2>
+<p><a ui-sref=""></a></p>
 <div class="cookies-index">
   <div class="cookie-index" ng-repeat="cookie in vm.cookies">
-    <h3>{{cookie.flavor}}</h3>
-    <p>{{cookie.quantity}}</p>
-    <img ng-src="{{cookie.img_url}}" alt="{{cookie.flavor}}">
+    <a ui-sref="cookiesShow({id: cookie._id})">
+      <h3>{{cookie.flavor}}</h3>
+      <p>{{cookie.quantity}}</p>
+      <img ng-src="{{cookie.img_url}}" alt="{{cookie.flavor}}">
+    </a>
   </div>
 </div>

@@ -28,9 +28,10 @@ app.get('/api/cookies/:id', (req, res) => {
 })
 
 app.put('/api/cookies/:id', (req, res) => {
-  Cookie.findOneAandUpdate({ _id: req.params.id }).then((cookie) => {
+  console.log('hi')
+  Cookie.findOneAndUpdate({ _id: req.params.id }, req.body).then((cookie) => {
     res.status(200).json(cookie)
-  })
+  }).catch((err) => {console.log(err)})
 })
 
 app.delete('/api/cookies/:id', (req, res) => {

@@ -5,7 +5,5 @@ angular.module('cookieMonster')
   ])
 
 function CookiesIndexFunction (CookieFactory) {
-  console.log('Index page!!!  COIOOKOOKOKOOOOOKIEESESESS')
-  console.log(CookieFactory.query())
   this.cookies = CookieFactory.query()
 }

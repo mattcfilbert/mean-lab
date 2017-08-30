@@ -1,0 +1,18 @@
+<h1>New Cookies</h1>
+<form>
+  <div class="form-row">
+    <label for="cookie-flavor">Flavor</label>
+    <input type="text" id="cookie-flavor" ng-model="vm.cookie.flavor" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <label for="cookie-quantity">Cookie Quantity</label>
+    <input type="text" id="cookie-quantity" ng-model="vm.cookie.quantity" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <label for="cookie-img_url">Picture</label>
+    <input type='text' id="cookie-img_url" ng-model="vm.cookie.img_url" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <button type="submit" ng-click="vm.createCookie()">Create Cookie</button>
+  </div>
+</form>
